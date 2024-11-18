@@ -22,7 +22,7 @@ COOKIE = os.getenv("SUNO_COOKIE", "")
 
 class Suno():
     """Main class for interacting with Suno API."""
-    BASE_URL = 'https://studio-api.suno.ai'
+    BASE_URL = 'https://studio-api.prod.suno.com'
     CLERK_BASE_URL = 'https://clerk.suno.com'
 
     def __init__(self, cookie: Optional[str] = None, model_version: str = ModelVersions.CHIRP_V3_5) -> None:
